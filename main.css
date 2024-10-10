@@ -84,11 +84,23 @@ header {
 
 /* ----- Phase 1 - Moderate Screen ----- */
 
-/* Your code here */
+@media screen and (min-width: 821px) {
+    .content {
+        flex-direction: row; /* change content to row layout */
+    }
+}
 
 /* ----- Phase 1 - Wide Screen ----- */
 
-/* Your code here */
+@media screen and (min-width: 1220px) {
+    .page {
+        flex-direction: row; /* change entire page to row layout */
+    }
+
+    .content {
+        flex-direction: row; /* content remains a row layout */
+    }
+}
 
 /* ===== PRINTING ===== */
 
