@@ -84,7 +84,7 @@ header {
 
 /* ----- Phase 1 - Moderate Screen ----- */
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 821px) and (max-width: 1219px) {
     .content {
         flex-direction: row; /* change content to row layout */
     }
@@ -106,4 +106,19 @@ header {
 
 /* Phase 2 */
 
-/* Your code here */
+@media print {
+    body {
+        background: white;
+    }
+    header, .sidebar, .image-box {
+        display: none;
+    }
+    .story-box {
+        background-color: white;
+        color: black;
+        padding: 0;
+    }
+    .image-box {
+        display: block;
+    }
+}
